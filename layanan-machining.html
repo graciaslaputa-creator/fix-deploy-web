@@ -1,0 +1,439 @@
+<!doctype html>
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Layanan Machining Part - Produksi komponen mesin presisi tinggi CV Yoto Karya Mandiri."
+      name="description"
+    />
+    <title>Machining Part - CV Yoto Karya Mandiri</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="image/logo-cv-yokokaryamandiri-batam.png"
+      rel="icon"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="site-header" id="beranda">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-3"
+            href="index.html"
+          >
+            <img
+              alt="CV Yoto Karya Mandiri Logo"
+              class="brand-logo"
+              src="image/logo-cv-yokokaryamandiri-batam.png"
+            />
+            <div>
+              <div class="brand-name">CV YOTO KARYA MANDIRI</div>
+              <div class="brand-tagline">
+                Specialised in machining and fabrication
+              </div>
+            </div>
+          </a>
+          <button
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler border-0 shadow-none"
+            data-bs-target="#mainNav"
+            data-bs-toggle="collapse"
+            type="button"
+          >
+            <i class="bi bi-list fs-2"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" data-i18n="nav_home" href="index.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-i18n="nav_about"
+                  href="index.html#tentang"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  aria-expanded="false"
+                  class="nav-link active dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  ><span data-i18n="nav_services">Layanan</span>
+                  <i class="bi bi-caret-down-fill"></i
+                ></a>
+                <ul
+                  aria-labelledby="navbarDropdown"
+                  class="dropdown-menu border-0 shadow-sm"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item active"
+                      href="layanan-machining.html"
+                      >Machining Part</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="layanan-portable-machining.html"
+                      >Portable Machining</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="layanan-fabrikasi.html"
+                      >Fabrication &amp; Welding</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="layanan-shipyard.html"
+                      >Shipyard Service</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-i18n="nav_docs"
+                  href="index.html#dokumentasi"
+                  >Dokumentasi</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-i18n="nav_contact"
+                  href="index.html#kontak"
+                  >Kontak</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  id="langDropdown"
+                  role="button"
+                >
+                  <i class="bi bi-globe"></i
+                  ><span id="langDropdownText"> ID</span>
+                </a>
+                <ul
+                  aria-labelledby="langDropdown"
+                  class="dropdown-menu dropdown-menu-end border-0 shadow-sm"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="
+                        setLang('id');
+                        return false;
+                      "
+                      >🇮🇩 Indonesia (ID)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="
+                        setLang('en');
+                        return false;
+                      "
+                      >🇬🇧 English (EN)</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section" style="padding-top: 110px">
+        <div class="container">
+          <!-- HEADER LAYANAN -->
+          <div class="row mb-5">
+            <div class="col-lg-10 mx-auto text-center">
+              <span class="section-kicker" data-i18n="auto_key_1"
+                >Layanan Kami</span
+              >
+              <h1
+                data-i18n="auto_key_2"
+                style="
+                  color: var(--blue-900);
+                  font-weight: 800;
+                  letter-spacing: -1.2px;
+                  font-size: clamp(30px, 3vw, 40px);
+                  margin: 15px 0;
+                "
+              >
+                Machining Part
+              </h1>
+              <p class="lead text-muted" data-i18n="auto_key_3">
+                Produksi Komponen Mesin Presisi Tinggi untuk Berbagai Kebutuhan
+                Industri.
+              </p>
+            </div>
+          </div>
+          <!-- DESKRIPSI -->
+          <div class="row align-items-center mb-5 pb-4">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img
+                alt="Machining Part Services"
+                class="img-fluid rounded-4 shadow-sm"
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+                style="object-fit: cover; height: 350px; width: 100%"
+              />
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+              <h3
+                data-i18n="auto_key_4"
+                style="
+                  color: var(--blue-900);
+                  font-weight: 800;
+                  margin-bottom: 20px;
+                "
+              >
+                Deskripsi Layanan
+              </h3>
+              <p
+                data-i18n="auto_key_5"
+                style="color: var(--muted); line-height: 1.8"
+              >
+                Layanan machining part kami menyediakan produksi komponen mesin
+                presisi tinggi menggunakan mesin CNC
+                <em>(Computer Numerical Control)</em> dan mesin konvensional.
+                Kami mampu mengerjakan berbagai material mulai dari baja karbon,
+                stainless steel, aluminium, hingga material khusus sesuai
+                spesifikasi teknis pelanggan.
+              </p>
+            </div>
+          </div>
+          <!-- FITUR (SUB-LAYANAN) -->
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title-row mb-4">
+                <div>
+                  <h2 data-i18n="auto_key_6">Sub-Layanan Utama</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="bi bi-gear-wide-connected"></i>
+                </div>
+                <h3 data-i18n="auto_key_7">CNC Turning &amp; Milling</h3>
+                <p data-i18n="auto_key_8">
+                  Pembuatan komponen dengan mesin CNC turning dan milling
+                  berteknologi tinggi untuk hasil presisi dengan toleransi ketat
+                  sesuai gambar teknik.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="value-card">
+                <div class="value-icon"><i class="bi bi-tools"></i></div>
+                <h3 data-i18n="auto_key_9">Conventional Machining</h3>
+                <p data-i18n="auto_key_10">
+                  Pengerjaan komponen dengan mesin bubut, frais, dan gerinda
+                  konvensional untuk komponen dengan geometri sederhana hingga
+                  menengah.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="value-card">
+                <div class="value-icon"><i class="bi bi-layers"></i></div>
+                <h3 data-i18n="auto_key_11">Custom Part Manufacturing</h3>
+                <p data-i18n="auto_key_12">
+                  Pembuatan suku cadang <em>custom</em> sesuai gambar desain
+                  pelanggan (reverse engineering), termasuk spare part yang
+                  sudah tidak diproduksi pabrikan.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="bi bi-clipboard2-check-fill"></i>
+                </div>
+                <h3 data-i18n="auto_key_13">Quality Inspection</h3>
+                <p data-i18n="auto_key_14">
+                  Setiap komponen melalui proses inspeksi dimensi dan kualitas
+                  menggunakan alat ukur presisi untuk memastikan kesesuaian
+                  dengan spesifikasi teknis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- WHATSAPP FLOATING -->
+    <a
+      aria-label="Contact via WhatsApp"
+      class="whatsapp-float"
+      href="https://wa.me/6282170574331"
+      rel="noopener"
+      target="_blank"
+    >
+      <i class="bi bi-whatsapp"></i>
+      <span data-i18n="float_wa"
+        >Hubungi Kami<br /><small>via WhatsApp</small></span
+      >
+    </a>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-lg-4">
+            <div class="d-flex align-items-start gap-3">
+              <img
+                alt="Logo CV Yoto Karya Mandiri"
+                class="footer-logo"
+                src="image/logo-cv-yokokaryamandiri-batam.png"
+              />
+              <div class="flex-grow-1">
+                <div class="brand-name text-white mb-1">
+                  CV YOTO KARYA MANDIRI
+                </div>
+                <p class="mb-1">Specialised in machining and fabrication</p>
+                <p class="footer-muted mb-0" data-i18n="footer_desc">
+                  Solusi teknis profesional untuk kebutuhan industri.
+                </p>
+              </div>
+            </div>
+            <div class="rounded overflow-hidden footer-map-container">
+              <iframe
+                allowfullscreen=""
+                height="150"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.063992739763!2d104.08482727521489!3d1.1141608988751646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d989bebd983c3f%3A0xc887555cd5463b23!2sCv%20Yoto%20Karya%20Mandiri!5e0!3m2!1sid!2sid!4v1786430998345!5m2!1sid!2sid"
+                style="border: 0"
+                width="100%"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="mx-lg-auto" style="max-width: 260px">
+              <h4 data-i18n="nav_contact">Kontak</h4>
+              <p class="mb-2">
+                <i class="bi bi-telephone me-2"></i> +62 819-2995-0709
+              </p>
+              <p class="mb-2">
+                <i class="bi bi-telephone me-2"></i> +62 822-8406-9981
+              </p>
+              <p class="mb-2">
+                <i class="bi bi-envelope me-2"></i> info@yotokaryamandiri.com
+              </p>
+              <p class="mb-2">
+                <i class="bi bi-geo-alt me-2"></i> Batam, Kepulauan Riau
+              </p>
+              <div class="footer-socials d-flex gap-3 mt-3">
+                <a
+                  aria-label="Facebook"
+                  href="https://facebook.com"
+                  target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  aria-label="Instagram"
+                  href="https://instagram.com"
+                  target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <h4 data-i18n="footer_form_title">Kirim Pesan</h4>
+            <form action="#" class="footer-form" method="POST">
+              <div class="mb-2">
+                <input
+                  class="form-control form-control-sm"
+                  data-i18n="footer_form_name"
+                  placeholder="Nama Anda"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <div class="mb-2">
+                <input
+                  class="form-control form-control-sm"
+                  data-i18n="footer_form_email"
+                  placeholder="Email Anda"
+                  required=""
+                  type="email"
+                />
+              </div>
+              <div class="mb-2">
+                <textarea
+                  class="form-control form-control-sm"
+                  data-i18n="footer_form_msg"
+                  placeholder="Pesan Anda"
+                  required=""
+                  rows="3"
+                ></textarea>
+              </div>
+              <button
+                class="btn btn-primary-custom btn-sm w-100"
+                data-i18n="footer_form_submit"
+                type="submit"
+              >
+                Kirim
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between gap-2 footer-bottom"
+        >
+          <span
+            >© <span id="year"></span> CV Yoto Karya Mandiri. All rights
+            reserved.</span
+          >
+          <span>Machining • Fabrication • Shipyard</span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- i18n & Custom Scripts -->
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
